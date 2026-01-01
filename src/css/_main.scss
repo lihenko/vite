@@ -1,0 +1,114 @@
+body, html{
+  position: relative;
+}
+
+.content-wrapper{
+  overflow: clip;
+}
+
+@layer components {
+    body{
+        @apply text-white text-sm sm:text-base leading-normal lg:text-lg  xxl:text-xxl font-body;
+    }
+    h1, .h1{
+        @apply text-[38px] lg:text-[56px] xl:text-[84px] xxl:text-[106px] leading-[1.1] font-title;
+    }
+    h2, .h2{
+      @apply text-[32px] lg:text-[44px] xl:text-[56px] xxl:text-[74px] leading-[1.1] font-title;
+    }
+    h3, .h3{
+      @apply text-[26px] lg:text-[32px] xl:text-[36px] xxl:text-[40px] leading-[1.1] font-title; 
+    }
+    h4, .h4{
+      @apply text-[22px] lg:text-[24px] xl:text-[26px] xxl:text-[32px] leading-[1.1] font-title; 
+    }
+    h5, .h5{
+      @apply text-[20px] lg:text-[22px] xl:text-[24px] xxl:text-[30px] leading-[1.1] font-title; 
+    }
+    p{
+        @apply mb-3 sm:mb-6;
+    }
+    .container{
+        @apply mx-auto px-6 lg:px-4;
+    }
+
+    input[type=text], input[type=email], input[type=tel], input[type=url], input[type=number], input[type=password]{
+      @apply font-body text-xl text-black border-b-2 border-blue bg-[#EFF0F1];
+      width: 100%;
+      padding: 12px 23px;
+    }
+
+    input:focus{
+      outline:none!important;
+      @apply border-black;
+    }
+    input::placeholder{
+        @apply text-black font-body;
+    }
+
+   textarea{
+      @apply font-body text-xl text-black border-b-2 border-blue bg-[#EFF0F1];
+      width: 100%;
+      height: 242px;
+      padding: 12px 23px;
+    }
+    textarea:focus{
+        outline:none!important;
+        border-color: #2E2554;
+    }
+    textarea::placeholder{
+      @apply text-violet font-body;
+    }
+
+    a{
+      @apply transition-all text-pink cursor-pointer no-underline inline-block;
+      &:hover{
+        @apply text-black;
+      }
+    }
+
+    .btn{
+      @apply border transition-all py-[14px] px-3 text-[18px] lg:text-[20px] inline-block w-[200px] lg:w-[300px] max-w-full text-center cursor-pointer no-underline rounded-full;
+    }
+
+
+    .black-btn{
+      @apply text-white bg-black border-black;
+      &:hover{
+        @apply text-white bg-pink border-pink;
+      }
+    }
+    .outline-btn{
+      @apply text-white border-white;
+      &:hover{
+        @apply text-black bg-white border-white;
+      }
+    }
+    .transparent-btn{
+      @apply text-black bg-[rgba(255,255,255,0.4)] border-black;
+      &:hover{
+        @apply text-white bg-black border-black;
+      }
+    }
+
+    input[type=submit]{
+      @extend .btn;
+      @apply bg-blue text-white border-blue hover:bg-black hover:border-black;
+    }
+  }
+
+  svg{
+    max-width: 100%;
+    height: auto;
+  }
+
+ .slick-track
+ {
+     display: flex !important;
+ }
+ 
+ .slick-slide
+ {
+     height: inherit !important;
+ }
+
