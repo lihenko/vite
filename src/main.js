@@ -1,8 +1,9 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 import './style.scss'
 
 const swiper = new Swiper('.swiper', {
@@ -29,8 +30,9 @@ const swiper = new Swiper('.swiper', {
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
+    draggable: true,
   },
-  modules: [Navigation, Pagination, Autoplay],
+  modules: [Navigation, Pagination, Autoplay, Scrollbar],
 });
 
 // Menu Toggles

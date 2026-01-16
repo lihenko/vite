@@ -11,18 +11,19 @@
 
    <include src="../components/_header.html"></include>
     <main>
-        <div class="swiper relative">
+      <section id="home-hero" class="w-full h-[450px] overflow-hidden">
+        <div class="swiper relative w-full h-full">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-                <img src="https://fastly.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68" alt="">
+                <img src="https://fastly.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68" alt="" class="w-full h-full object-cover">
             </div>
             <div class="swiper-slide">
-                <img src="https://fastly.picsum.photos/id/11/2500/1667.jpg?hmac=xxjFJtAPgshYkysU_aqx2sZir-kIOjNR9vx0te7GycQ" alt="">
+                <img src="https://fastly.picsum.photos/id/11/2500/1667.jpg?hmac=xxjFJtAPgshYkysU_aqx2sZir-kIOjNR9vx0te7GycQ" alt="" class="w-full h-full object-cover">
             </div>
             <div class="swiper-slide">
-                <img src="https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s" alt="">
+                <img src="https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s" alt="" class="w-full h-full object-cover">
             </div>
         </div>
         <!-- If we need pagination -->
@@ -35,11 +36,13 @@
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
         </div>
+      </section>
+        
         <section class="py-16">
           <div class="container">
             <div class="flex flex-wrap -mx-3">
               <div class="px-3 w-full lg:w-1/2">
-                <img src="/src/assets/img/2-1-1024x683.png" alt="grape">
+                <img src="/img/2-1-1024x683.webp" alt="grape">
               </div>
             </div>
           </div>
@@ -52,10 +55,6 @@
       <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
     </button>
   </div>
-  <script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
   <script type="module" src="/src/main.js"></script>
 </body>
 
